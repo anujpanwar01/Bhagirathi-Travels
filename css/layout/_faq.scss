@@ -1,0 +1,76 @@
+.section__faq {
+  padding: 0rem 15rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  @include respond(tab-land) {
+    padding: 4rem 5rem 4rem;
+  }
+  &--main {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    & i {
+      color: $color-primary;
+    }
+  }
+}
+.section__faqs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "ques1 ques2"
+    "ques3 ques3";
+  gap: 2rem;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ques1"
+      "ques2"
+      "ques3";
+  }
+}
+.faq {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+
+  & i {
+    color: $color-primary;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  & p {
+    grid-column: 2;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+  }
+  &__heading {
+    cursor: pointer;
+  }
+}
+///////////////////////////////////////////////@include//@include
+.hidden--p {
+  display: none;
+}
+.rotate {
+  transform: rotateX(180deg);
+}
+.d {
+  transition: all 1s ease;
+}
+
+.header__nav--ul-1 {
+  opacity: 1;
+  visibility: visible;
+}
+.nav--open {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  background-image: linear-gradient(to bottom right, #fff, #c0d4e9);
+  padding: 5rem;
+}

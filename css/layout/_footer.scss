@@ -1,0 +1,64 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  &__detail {
+    background-color: #1403ff8f;
+    padding: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 3rem;
+      padding: 4rem 8rem 2rem;
+    }
+  }
+  &__nav--ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    @include respond(phone) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+  &__nav--link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+  }
+  &__social--media {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include respond(phone) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+  &__copyright {
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: #666;
+    text-transform: uppercase;
+  }
+  &--secondary {
+    color: #fff;
+    font-weight: 200;
+  }
+}
+[data-line] {
+  height: 15rem;
+  width: 0.5px;
+  background-color: rgb(255, 255, 255);
+  @include respond(phone) {
+    height: 1px;
+    width: 26rem;
+  }
+}
+[data-icon] {
+  color: #fff;
+}

@@ -1,0 +1,108 @@
+.heading {
+  color: #112a46;
+  font-family: "Inter";
+  &__primary {
+    font-size: 4.4rem;
+    font-weight: 200;
+    &--main {
+      background-image: linear-gradient(to right bottom, #f100a1e7, #f35151);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: cover;
+      text-shadow: 0 2px 2px blue;
+      @include respond(tab-land) {
+        font-size: 4rem;
+        text-align: center;
+      }
+    }
+  }
+}
+.heading--secondary {
+  font-size: 3.2rem;
+
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  font-weight: 300;
+  &-1 {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  @include respond(tab-land) {
+    font-size: 3rem;
+    text-align: center;
+  }
+  @include respond(phone) {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 4.2rem;
+  }
+  @include respond(sm-phone) {
+    hyphens: auto;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+  }
+}
+.heading--fourth {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  &-1 {
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+  &-2 {
+    letter-spacing: 1.7px;
+    // font-size: 1.6rem;
+  }
+}
+.heading--fifth {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+}
+.paragraph {
+  line-height: 1.5;
+  color: #666;
+  font-size: 1.7rem;
+  // word-wrap: break-word;
+  @include respond(tab-port) {
+    text-align: center;
+  }
+  &--1 {
+    color: #555;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+}
+///////////////////////////////////////////////////////////////////////@function//@function//@function
+//btn
+.btn {
+  font-family: "Inter";
+  color: #112a46;
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  padding: 1.2rem 3.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.6s;
+}
+.icons {
+  font-size: 1.8rem;
+  color: #112a46;
+  transition: all 0.6s;
+  // &:hover {
+  //   color: #112a46c9;
+  // }
+}
+
+//  background-color: #e2e9f0; */
+// color: #112A46;
+// background-image: linear-gradient(to bottom right,#ffffff78 50%,#D8E5F3);

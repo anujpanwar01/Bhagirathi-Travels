@@ -1,0 +1,173 @@
+.contact__us {
+  position: relative;
+  transition: $slow-loading;
+  transform-origin: left;
+  @include respond(tab-land) {
+    padding: 10rem 6rem 3rem;
+  }
+  @include respond(tab-port) {
+    padding: 10rem 0 3rem;
+  }
+  // &::after {
+  //   display: block;
+  //   content: "";
+  //   position: absolute;
+  //   height: 1px;
+  //   width: 95%;
+  //   top: 10rem;
+  //   left: 0;
+  //   background-color: #777;
+  // }
+  padding: 15rem 10rem 10rem;
+  &--heading {
+    padding: 3rem;
+    text-align: center;
+  }
+  .contact__us--1 {
+    background-color: #fff;
+    background-image: linear-gradient(
+      to left top,
+      transparent -30%,
+      #90accca8 220%
+    );
+    @include flexColumn;
+    gap: 2rem;
+    padding: 4rem 6rem 8rem 3rem;
+    caret-color: #112a46;
+    @include respond(tab-port) {
+      padding: 4rem;
+    }
+  }
+  &--forms {
+    display: flex;
+
+    background-size: cover;
+    // align-items: center;
+    justify-content: space-around;
+    @include respond(tab-11) {
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 8rem;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 6rem;
+      padding: 0 0 4rem;
+    }
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    font-size: 1.6rem;
+    color: #112a46;
+    padding: 1.6rem 2rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    outline: #ffffff;
+    border: none;
+    margin-right: 1.5rem;
+    @include respond(tab-land) {
+      width: 20rem;
+    }
+    @include respond(tab-11) {
+      width: 100%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    &::placeholder {
+      color: #777;
+    }
+  }
+  &--form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "name email"
+      "textarea textarea";
+    gap: 2rem;
+    @include respond(tab-11) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "name"
+        "email"
+        "textarea";
+    }
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "name"
+        "email"
+        "textarea";
+    }
+  }
+  &--form textarea {
+    padding: 1rem 2rem;
+    width: 98%;
+    height: 10rem;
+    border-radius: 1rem;
+    background-color: #fdfdfd;
+    border: none;
+    outline: #fffefe;
+    font-size: 1.6rem;
+  }
+  &--form label {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  &--form .button {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+  &--btn {
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: none;
+    transition: $slow-loading;
+    &:hover {
+      background-color: #f7f7f7;
+    }
+  }
+
+  &--img {
+    width: 33%;
+    border-radius: 1rem;
+    outline: solid;
+    outline-color: rgb(255, 255, 255);
+    // outline-offset: 2rem;
+    outline-width: 1.6rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.356);
+    @include respond(tab-11) {
+      width: 50%;
+      height: 30rem;
+      outline-width: 1rem;
+      align-self: center;
+      flex: 1;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      height: 30rem;
+      outline-width: 1rem;
+    }
+  }
+}
+.label {
+  & span {
+    padding-left: 0.5rem;
+    letter-spacing: 1px;
+  }
+  &--1 {
+    grid-area: name;
+  }
+  &--2 {
+    grid-area: email;
+  }
+  &--3 {
+    grid-area: textarea;
+  }
+}
