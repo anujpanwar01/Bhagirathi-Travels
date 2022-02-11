@@ -150,7 +150,7 @@ function addComment() {
     var e;
     document.querySelector(".testimonial__container-lg").insertAdjacentHTML(
       "afterbegin",
-      ` \n       <div class='user__feedback' >\n      <div class="testimonial__container--user">\n        <div class="testimonial__container--user-photo">${
+      ` \n       <div class='user__feedback'>\n      <div class="testimonial__container--user">\n        <div class="testimonial__container--user-photo">${
         ((e = n.value),
         e
           .toLowerCase()

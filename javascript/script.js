@@ -253,7 +253,7 @@ function addComment() {
     document.querySelector(".testimonial__container-lg").insertAdjacentHTML(
       "afterbegin",
       ` 
-       <div >
+       <div class='user__feedback'>
       <div class="testimonial__container--user">
         <div class="testimonial__container--user-photo">${userProfile(
           userName.value
