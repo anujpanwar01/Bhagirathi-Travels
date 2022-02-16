@@ -47,11 +47,11 @@
     @include respond(tab-11) {
       justify-content: space-between;
       flex-direction: column;
-      gap: 8rem;
+      // gap: 8rem;
     }
     @include respond(tab-port) {
       flex-direction: column;
-      gap: 6rem;
+      // gap: 6rem;
       padding: 0 0 4rem;
     }
   }
@@ -62,6 +62,7 @@
     color: #112a46;
     padding: 1.6rem 2rem;
     width: 30rem;
+    // margin-top: 1rem;
     border-radius: 1rem;
     background-color: #ffffff;
     outline: #ffffff;
@@ -87,6 +88,7 @@
       "name email"
       "textarea textarea";
     gap: 2rem;
+    margin-bottom: 8rem;
     @include respond(tab-11) {
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -115,13 +117,13 @@
   &--form label {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    // margin-bottom: 1rem;
     align-items: flex-start;
   }
   &--form .button {
     display: flex;
     margin-top: 1.5rem;
-    gap: 2rem;
+    // gap: 2rem;
   }
   &--btn {
     cursor: pointer;
@@ -129,6 +131,9 @@
     background-color: #fff;
     border: none;
     transition: $slow-loading;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
     &:hover {
       background-color: #f7f7f7;
     }
@@ -160,6 +165,7 @@
   & span {
     padding-left: 0.5rem;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
   }
   &--1 {
     grid-area: name;
