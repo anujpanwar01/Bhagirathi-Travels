@@ -7,20 +7,23 @@
   }
   @include respond(phone) {
     width: 100%;
+    margin-bottom: 15rem;
   }
 }
 .cards {
   @include flexColumn;
   align-items: center;
-  gap: 16rem;
-  @include respond(phone) {
-    gap: 10rem;
-  }
+  // // gap: 16rem;
+  // // margin-bottom: 10;
+  // @include respond(phone) {
+  //   // gap: 10rem;
+  // }
   &__card {
     display: grid;
     // grid-template-columns: 40rem 1fr;
     width: 80%;
-    gap: 6rem;
+
+    margin-bottom: 16rem;
     @include respond(tab-port) {
       width: 95%;
     }
@@ -28,6 +31,7 @@
       grid-template-columns: 50rem !important;
       justify-content: center;
       grid-template-rows: repeat(2, 1fr);
+      margin-bottom: 10rem;
     }
     @include respond(sm-phone) {
       grid-template-columns: 38rem !important;
@@ -89,7 +93,7 @@
     &--text {
       @include flexColumn;
 
-      gap: 1.4rem;
+      // gap: 1.4rem;
       &-rating {
         @include flexCenter;
         height: 4rem;
@@ -122,11 +126,14 @@
         list-style: none;
         @include flexColumn;
         align-items: flex-start;
-        gap: 1rem;
+        // gap: 1rem;
         color: #333;
         // flex-basis: 90%;
         // margin-bottom: 3rem;
         justify-content: center;
+        & li {
+          margin-bottom: 1rem;
+        }
       }
     }
     &-icon {
@@ -147,4 +154,10 @@
       }
     }
   }
+}
+.sm-margin-btm {
+  margin-bottom: 1.4rem;
+}
+.sm-margin-top {
+  margin-top: 1rem;
 }
