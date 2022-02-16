@@ -48,7 +48,7 @@
       @include flex;
       justify-content: space-around;
       list-style: none;
-      gap: 1rem;
+      // gap: 1rem;
 
       @include respond(tab-port) {
         flex-direction: column;
@@ -57,9 +57,15 @@
         width: 100%;
         position: relative;
         z-index: 100;
-        gap: 4rem;
+        // gap: 4rem;
         display: none;
         padding: 4rem 0 4rem;
+      }
+      & li {
+        margin-right: 1rem;
+        @include respond(tab-port) {
+          margin-bottom: 4rem;
+        }
       }
     }
     @supports not (gap: 1rem) {

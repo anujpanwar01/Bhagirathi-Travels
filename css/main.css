@@ -100,7 +100,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  gap: 1rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -117,9 +116,18 @@ body {
     width: 100%;
     position: relative;
     z-index: 100;
-    gap: 4rem;
     display: none;
     padding: 4rem 0 4rem;
+  }
+}
+
+.header__nav--ul li {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header__nav--ul li {
+    margin-bottom: 4rem;
   }
 }
 
