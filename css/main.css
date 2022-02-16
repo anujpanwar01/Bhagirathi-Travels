@@ -1799,7 +1799,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4rem;
 }
 
 @media only screen and (max-width: 84em) {
@@ -1815,10 +1814,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 .section__faq--main i {
+  margin-right: 0.5rem;
   color: #112a46c9;
 }
 
@@ -1828,7 +1828,6 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "ques1 ques2" "ques3 ques3";
-  gap: 2rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1850,10 +1849,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .faq i {
+  margin-right: 0.5rem;
   color: #112a46c9;
   font-size: 1.8rem;
   cursor: pointer;
