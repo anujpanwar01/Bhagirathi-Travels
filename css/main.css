@@ -946,7 +946,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -960,12 +959,12 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .testimonial__input {
-    gap: 3rem;
     width: 80%;
   }
 }
 
 .testimonial__input input[type="text"] {
+  margin-bottom: 2rem;
   font-size: 1.4rem;
   width: 30rem;
   height: 3rem;
@@ -978,6 +977,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .testimonial__input input[type="text"] {
     width: 100%;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1009,6 +1009,7 @@ body {
   padding: 0.5rem 2rem;
   background-color: #112a46c9;
   border-radius: 0.5rem;
+  margin-bottom: 2rem;
   border: none;
   color: #fff;
   font-size: 1.4rem;
@@ -1017,6 +1018,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .testimonial__input input[type="submit"] {
+    margin-bottom: 3rem;
     padding: 1.5rem;
     font-size: 1.6rem;
   }

@@ -17,17 +17,18 @@
   //input field
   &__input {
     display: flex;
-    gap: 2rem;
+    // gap: 2rem;
     @include respond(tab-port) {
       // gap: 0.5rem;
       flex-direction: column;
     }
     @include respond(phone) {
-      gap: 3rem;
+      // gap: 3rem;
       width: 80%;
     }
 
     & input[type="text"] {
+      margin-bottom: 2rem;
       font-size: 1.4rem;
       width: 30rem;
       height: 3rem;
@@ -38,6 +39,7 @@
       padding: 2rem 0.5rem;
       @include respond(phone) {
         width: 100%;
+        margin-bottom: 3rem;
       }
       // box-shadow: 0 0.5rem 3rem #555;
       &:focus {
@@ -52,12 +54,14 @@
       padding: 0.5rem 2rem;
       background-color: $color-primary;
       border-radius: 0.5rem;
+      margin-bottom: 2rem;
 
       border: none;
       color: #fff;
       font-size: 1.4rem;
       cursor: pointer;
       @include respond(tab-port) {
+        margin-bottom: 3rem;
         padding: 1.5rem;
         font-size: 1.6rem;
       }
