@@ -9,7 +9,7 @@
     align-items: center;
     @include respond(phone) {
       flex-direction: column;
-      gap: 3rem;
+      // gap: 3rem;
       padding: 4rem 8rem 2rem;
     }
   }
@@ -61,4 +61,7 @@
 }
 [data-icon] {
   color: #fff;
+}
+.sm-margin {
+  margin-bottom: 2rem;
 }
