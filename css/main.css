@@ -1849,6 +1849,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.faq:not(:last-child) {
   margin-bottom: 2rem;
 }
 
