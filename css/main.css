@@ -611,15 +611,6 @@ body {
 
 .cards__card .slider-btn {
   font-size: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: rgba(255, 255, 255, 0.603);
   padding: 2rem;
   height: 1rem;
@@ -644,8 +635,26 @@ body {
   right: 1rem;
 }
 
+.cards__card .slider-btn-right::before {
+  position: absolute;
+  content: "	\00BB";
+  font-size: 2.5rem;
+  /* left: 35%; */
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
 .cards__card .slider-btn-left {
   left: 1rem;
+}
+
+.cards__card .slider-btn-left::before {
+  position: absolute;
+  content: "	\00AB";
+  font-size: 2.5rem;
+  /* left: 35%; */
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
 }
 
 .cards__card--text {
@@ -656,6 +665,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cards__card--text {
+    margin-left: 0 !important;
+  }
 }
 
 .cards__card--text-rating {
@@ -750,6 +766,10 @@ body {
 
 .sm-margin-top {
   margin-top: 1rem;
+}
+
+.card-2 {
+  margin: 0 4rem 0 0;
 }
 
 .heading {
