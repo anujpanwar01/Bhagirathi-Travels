@@ -129,9 +129,9 @@
     margin-bottom: 0rem;
   }
 }
-.header__social--media-icon:not(:last-child) {
-  // display: inline-block;
-  margin-right: 3rem;
+.header__social--media {
+  display: flex;
+  gap: 3rem;
 }
 
 .btn__tour {
@@ -154,12 +154,9 @@
 }
 // }
 
-@supports (display: flex) {
-  .header__social--media {
-    display: flex;
-    gap: 3rem;
-  }
-  .header__top {
+@supports not (gap: 3rem) {
+  .header__social--media-icon {
+    margin-right: 3rem;
   }
 }
 ////////////////////////@function
