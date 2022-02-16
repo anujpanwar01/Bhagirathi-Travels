@@ -222,16 +222,16 @@ body {
   }
 }
 
-.header__social--media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 3rem;
+.header__social--media:not(:last-child) {
+  margin-right: 3rem;
 }
 
-@supports not (display: flex) {
-  .header__social--media:not(:last-child) {
-    margin-right: 3rem;
+@supports (display: flex) {
+  .header__social--media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
   }
 }
 

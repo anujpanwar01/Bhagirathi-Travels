@@ -129,13 +129,14 @@
     margin-bottom: 0rem;
   }
 }
-.header__social--media {
-  display: flex;
-  gap: 3rem;
-  @supports not (display: flex) {
-    &:not(:last-child) {
-      margin-right: 3rem;
-    }
+.header__social--media:not(:last-child) {
+  // display: inline-block;
+  margin-right: 3rem;
+}
+@supports (display: flex) {
+  .header__social--media {
+    display: flex;
+    gap: 3rem;
   }
 }
 
