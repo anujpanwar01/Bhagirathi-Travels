@@ -12,7 +12,9 @@
   @include respond(phone) {
     padding: 3rem 1.5rem;
   }
-
+  &__heading {
+    margin-bottom: 2rem;
+  }
   &__nav {
     width: 55%;
     transition: $slow-loading;
@@ -36,9 +38,7 @@
       position: absolute;
       top: 18rem;
     }
-    &__heading {
-      margin-bottom: 2rem;
-    }
+
     &--outline {
       width: 1px;
       background-color: #112a46;
@@ -134,9 +134,9 @@
 .header__social--media {
   display: flex;
   // gap: 3rem;
+  margin-bottom: 2rem;
   &-icon {
     margin-right: 3rem;
-    margin-bottom: 2rem;
   }
 }
 
