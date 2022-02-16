@@ -222,7 +222,7 @@ body {
   }
 }
 
-.header__social--media:not(:last-child) {
+.header__social--media-icon:not(:last-child) {
   margin-right: 3rem;
 }
 
