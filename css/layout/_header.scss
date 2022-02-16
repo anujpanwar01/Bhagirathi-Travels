@@ -131,7 +131,12 @@
 }
 .header__social--media {
   display: flex;
-  gap: 3rem;
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+  @supports (display: flex) {
+    gap: 3rem;
+  }
 }
 
 .btn__tour {
