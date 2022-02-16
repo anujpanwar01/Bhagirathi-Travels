@@ -131,11 +131,11 @@
 }
 .header__social--media {
   display: flex;
-  &:not(:last-child) {
-    margin-right: 3rem;
-  }
-  @supports (display: flex) {
-    gap: 3rem;
+  gap: 3rem;
+  @supports not (display: flex) {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
   }
 }
 
