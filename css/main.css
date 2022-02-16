@@ -772,6 +772,10 @@ body {
   margin: 0 4rem 0 0;
 }
 
+.slider-btn-2 {
+  top: 40% !important;
+}
+
 .heading {
   color: #112a46;
   font-family: "Inter";
