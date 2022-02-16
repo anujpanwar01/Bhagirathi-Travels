@@ -226,15 +226,6 @@ body {
   margin-right: 3rem;
 }
 
-@supports (display: flex) {
-  .header__social--media {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 3rem;
-  }
-}
-
 .btn__tour {
   color: #555;
   background-color: #e9e7e566;
@@ -256,6 +247,15 @@ body {
   border-radius: 10rem;
   -webkit-box-shadow: 0 1rem 1rem #cec8c854;
           box-shadow: 0 1rem 1rem #cec8c854;
+}
+
+@supports (display: flex) {
+  .header__social--media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+  }
 }
 
 .cookie {

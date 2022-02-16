@@ -133,12 +133,6 @@
   // display: inline-block;
   margin-right: 3rem;
 }
-@supports (display: flex) {
-  .header__social--media {
-    display: flex;
-    gap: 3rem;
-  }
-}
 
 .btn__tour {
   color: #555;
@@ -160,6 +154,14 @@
 }
 // }
 
+@supports (display: flex) {
+  .header__social--media {
+    display: flex;
+    gap: 3rem;
+  }
+  .header__top {
+  }
+}
 ////////////////////////@function
 .cookie {
   font-size: 1.6rem;
