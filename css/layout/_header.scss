@@ -36,7 +36,9 @@
       position: absolute;
       top: 18rem;
     }
-
+    &__heading {
+      margin-bottom: 2rem;
+    }
     &--outline {
       width: 1px;
       background-color: #112a46;
@@ -125,7 +127,7 @@
   @include respond(tab-port) {
     flex-direction: column;
     width: 100%;
-    gap: 2rem;
+    // gap: 2rem;
     margin-bottom: 0rem;
   }
 }
@@ -134,11 +136,13 @@
   // gap: 3rem;
   &-icon {
     margin-right: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
 .btn__tour {
   color: #555;
+  margin-bottom: 2rem;
   background-color: #e9e7e566;
   &:hover {
     background-color: #eeeeee;

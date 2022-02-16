@@ -77,6 +77,10 @@ body {
   }
 }
 
+.header__nav__heading {
+  margin-bottom: 2rem;
+}
+
 .header__nav--outline {
   width: 1px;
   background-color: #112a46;
@@ -217,7 +221,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    gap: 2rem;
     margin-bottom: 0rem;
   }
 }
@@ -230,10 +233,12 @@ body {
 
 .header__social--media-icon {
   margin-right: 3rem;
+  margin-bottom: 2rem;
 }
 
 .btn__tour {
   color: #555;
+  margin-bottom: 2rem;
   background-color: #e9e7e566;
 }
 
