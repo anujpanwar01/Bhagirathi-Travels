@@ -1594,7 +1594,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
   list-style: none;
 }
 
@@ -1604,7 +1603,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 3rem;
   }
 }
 
@@ -1622,7 +1620,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1631,7 +1628,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 3rem;
   }
 }
 
@@ -1668,6 +1664,11 @@ body {
 
 .sm-margin {
   margin-bottom: 2rem;
+}
+
+.rg-margin,
+.rm-margin {
+  margin-right: 2rem;
 }
 
 .col-row-3 {
