@@ -131,7 +131,10 @@
 }
 .header__social--media {
   display: flex;
-  gap: 3rem;
+  // gap: 3rem;
+  &-icon {
+    margin-right: 3rem;
+  }
 }
 
 .btn__tour {
