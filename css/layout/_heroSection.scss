@@ -33,7 +33,7 @@
 
     @include flexColumn;
     align-items: flex-start;
-    gap: 2rem;
+    // gap: 2rem;
     @include respond(tab-port) {
       grid-row: 1;
       grid-column: 1/-1;
@@ -98,4 +98,10 @@
       }
     }
   }
+}
+
+.hero--paragraph,
+.heading--hero-2,
+.heading--hero-4 {
+  margin-bottom: 2rem;
 }

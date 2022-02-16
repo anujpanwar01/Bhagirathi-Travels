@@ -371,7 +371,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 2rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -477,6 +476,12 @@ body {
     grid-column: 1/6;
     margin-left: 0;
   }
+}
+
+.hero--paragraph,
+.heading--hero-2,
+.heading--hero-4 {
+  margin-bottom: 2rem;
 }
 
 .section--2 {
