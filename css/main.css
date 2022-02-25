@@ -1464,6 +1464,7 @@ body {
   border: none;
   outline: #fffefe;
   font-size: 1.6rem;
+  resize: none;
 }
 
 .contact__us--form label {
@@ -1608,6 +1609,16 @@ body {
   }
 }
 
+.footer__nav--ul li {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__nav--ul li {
+    margin-bottom: 0;
+  }
+}
+
 .footer__nav--link {
   text-decoration: none;
   color: white;
@@ -1622,6 +1633,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1630,6 +1642,17 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 2rem;
+  }
+}
+
+.footer__social--media a {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__social--media a {
+    margin-bottom: 0;
   }
 }
 
