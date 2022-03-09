@@ -85,6 +85,7 @@
       grid-column: 1/5;
       background-image: url(../img/hero-img-1.jpg);
       background-size: cover;
+      background-position: center;
       margin-left: -6rem;
       box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.411);
       @include respond(tab-port) {
