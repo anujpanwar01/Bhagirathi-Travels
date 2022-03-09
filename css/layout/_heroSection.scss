@@ -63,6 +63,7 @@
     background-image: linear-gradient(to bottom, #1a1a1b2a, #d0bfff0e),
       url(../img/hero-img-2.jpg);
     background-size: cover;
+    background-position: center;
     @include respond(tab-port) {
       grid-row: 2;
       grid-column: 1/-1;
